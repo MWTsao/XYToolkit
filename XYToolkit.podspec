@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'XYToolkit', 'XYToolkit/**/*.{h,m}'
+  s.source_files = 'Classes/*.{h,m}'
 #  s.subspec 'Tools' do |ss|
 #        ss.source_files = "XYToolkit", 'XYToolkit/Classes/Tools/*.{h,m}'
 #    end
