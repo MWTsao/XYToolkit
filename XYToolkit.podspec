@@ -30,7 +30,10 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'XYToolkit/Classes/*.{h,m}'
+  # s.source_files = 'XYToolkit/Classes/**/*'
+  s.subspec 'Tools' do |ss|
+        ss.source_files = 'XYToolkit/Classes/Tools/*.{h,m}'
+    end
   
   # s.resource_bundles = {
   #   'XYToolkit' => ['XYToolkit/Assets/*.png']
