@@ -1,5 +1,5 @@
 //
-//  XYToolkit.h
+//  XYTool.h
 //  Pods-XYToolkit_Example
 //
 //  Created by hryj on 2021/7/1.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface XYToolkit : NSObject
+@interface XYTool : NSObject
 
 - (void)test;
 

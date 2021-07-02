@@ -14,8 +14,10 @@
 		3D1ED4509591FADC14DEBD5476D0259D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		86CC6C6A64BE87CDC6A3E8B7431138C6 /* Pods-XYToolkit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B1451D33EE4C7A00EE696C48194F75E /* Pods-XYToolkit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9162165841A4C23DA3E23ADF543C5B88 /* XYToolkit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CF269D2C3FE287A47CFC838648D0CDE /* XYToolkit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C1527340268DD31E001A8C0E /* XYToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = C152733E268DD31E001A8C0E /* XYToolkit.h */; };
-		C1527341268DD31E001A8C0E /* XYToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = C152733F268DD31E001A8C0E /* XYToolkit.m */; };
+		C14F8ADA268EAE1000D0639C /* UIView+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C14F8AD8268EAE1000D0639C /* UIView+XY.m */; };
+		C14F8ADB268EAE1000D0639C /* UIView+XY.h in Headers */ = {isa = PBXBuildFile; fileRef = C14F8AD9268EAE1000D0639C /* UIView+XY.h */; };
+		C1527340268DD31E001A8C0E /* XYTool.h in Headers */ = {isa = PBXBuildFile; fileRef = C152733E268DD31E001A8C0E /* XYTool.h */; };
+		C1527341268DD31E001A8C0E /* XYTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C152733F268DD31E001A8C0E /* XYTool.m */; };
 		CE7E1E421B8FC06F0ACB9FCEBA8FDD79 /* Pods-XYToolkit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 272089E862DD239F6322BDEA55772A2F /* Pods-XYToolkit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E414CEEB2A11A740BCE368A98E348C59 /* Pods-XYToolkit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F87A044C7856464C689B3081609B58C /* Pods-XYToolkit_Example-dummy.m */; };
 /* End PBXBuildFile section */
@@ -67,8 +69,10 @@
 		A93A017F8124666D623223DDB16737BB /* XYToolkit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XYToolkit-prefix.pch"; sourceTree = "<group>"; };
 		B724CB7955D62D3E1F6FC2863BB0BC90 /* Pods-XYToolkit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XYToolkit_Example-Info.plist"; sourceTree = "<group>"; };
 		BE9FDF33D9EB675510BF7AFF36871EE0 /* Pods_XYToolkit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYToolkit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C152733E268DD31E001A8C0E /* XYToolkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYToolkit.h; sourceTree = "<group>"; };
-		C152733F268DD31E001A8C0E /* XYToolkit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYToolkit.m; sourceTree = "<group>"; };
+		C14F8AD8268EAE1000D0639C /* UIView+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XY.m"; sourceTree = "<group>"; };
+		C14F8AD9268EAE1000D0639C /* UIView+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XY.h"; sourceTree = "<group>"; };
+		C152733E268DD31E001A8C0E /* XYTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTool.h; sourceTree = "<group>"; };
+		C152733F268DD31E001A8C0E /* XYTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTool.m; sourceTree = "<group>"; };
 		DD425F2A2F651EEE6545A12DEE7FEE56 /* Pods-XYToolkit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XYToolkit_Tests-Info.plist"; sourceTree = "<group>"; };
 		F40C04413CC16E50E272A6B90788241A /* XYToolkit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XYToolkit-Info.plist"; sourceTree = "<group>"; };
 		F906E5DF1D7AC5E9CA97C5980BE3482F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -199,8 +203,10 @@
 		C152733D268DD31E001A8C0E /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				C152733E268DD31E001A8C0E /* XYToolkit.h */,
-				C152733F268DD31E001A8C0E /* XYToolkit.m */,
+				C152733E268DD31E001A8C0E /* XYTool.h */,
+				C152733F268DD31E001A8C0E /* XYTool.m */,
+				C14F8AD9268EAE1000D0639C /* UIView+XY.h */,
+				C14F8AD8268EAE1000D0639C /* UIView+XY.m */,
 			);
 			name = Tools;
 			path = XYToolkit/Classes/Tools;
@@ -250,7 +256,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1527340268DD31E001A8C0E /* XYToolkit.h in Headers */,
+				C1527340268DD31E001A8C0E /* XYTool.h in Headers */,
+				C14F8ADB268EAE1000D0639C /* UIView+XY.h in Headers */,
 				9162165841A4C23DA3E23ADF543C5B88 /* XYToolkit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,7 +404,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				111C78B50A7F8A55A6AC67A43E5F0D77 /* XYToolkit-dummy.m in Sources */,
-				C1527341268DD31E001A8C0E /* XYToolkit.m in Sources */,
+				C14F8ADA268EAE1000D0639C /* UIView+XY.m in Sources */,
+				C1527341268DD31E001A8C0E /* XYTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
